@@ -1,8 +1,9 @@
 name: CI
-
-on: 
+on:
   push:
-    - master
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - master
 
 jobs:
   java-8:
